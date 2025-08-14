@@ -10,5 +10,6 @@ public class App
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
         Programmer programmer = (Programmer) context.getBean("programmer");
         programmer.writeCode();
+        System.out.println(programmer.getAge());
     }
 }

@@ -4,6 +4,7 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="programmer" class="inc.sims.hustles.Programmer">
+        <property name="age" value="32"></property>
     </bean>
 
 </beans>
