@@ -10,10 +10,12 @@ public class App
     public static void main( String[] args )
     {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+
+        Programmer myProgrammer = context.getBean(Programmer.class);
+        myProgrammer.writeCode();
+        System.out.println(myProgrammer.getAge());
+
         Laptop lt = context.getBean("laptop", Laptop.class);
-
-        Laptop lt2 = context.getBean("laptop", Laptop.class);
-
 
 
         /**The code below use the XML based configuration*/

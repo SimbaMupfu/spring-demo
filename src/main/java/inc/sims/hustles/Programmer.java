@@ -36,5 +36,6 @@ public class Programmer {
 
     public void writeCode(){
         System.out.println("Write code!");
+        computer.compileCode();
     }
 }
