@@ -4,11 +4,12 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="programmer" class="inc.sims.hustles.Programmer">
-        <constructor-arg name="laptop" ref="mylaptop"/>
+        <constructor-arg name="computer" ref="mydesktop"/>
         <constructor-arg name="age" value="32"/>
 <!--        <property name="age" value="32"></property>-->
 <!--        <property name="laptop" ref="mylaptop"></property>-->
     </bean>
     <bean id="mylaptop" class="inc.sims.hustles.Laptop"></bean>
+    <bean id="mydesktop" class="inc.sims.hustles.Desktop"></bean>
 
 </beans>

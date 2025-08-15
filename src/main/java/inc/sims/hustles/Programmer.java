@@ -5,16 +5,16 @@ import java.beans.ConstructorProperties;
 public class Programmer {
 
     private int age;
-    private Laptop laptop;
+    private Computer computer;
 
     public Programmer(){
         System.out.println("Programmer object created");
     }
 
-    @ConstructorProperties({"age", "laptop"})
-    public Programmer(int age, Laptop laptop){
+    @ConstructorProperties({"age", "computer"})
+    public Programmer(int age, Computer computer){
         this.age = age;
-        this.laptop = laptop;
+        this.computer = computer;
         System.out.println("Parameterised Programmer object created");
     }
 
@@ -26,12 +26,12 @@ public class Programmer {
         this.age = age;
     }
 
-    public Laptop getLaptop() {
-        return laptop;
+    public Computer getComputer() {
+        return computer;
     }
 
-    public void setLaptop(Laptop laptop) {
-        this.laptop = laptop;
+    public void setComputer(Computer computer) {
+        this.computer = computer;
     }
 
     public void writeCode(){
