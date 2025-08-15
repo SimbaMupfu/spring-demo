@@ -15,8 +15,6 @@ public class App
         myProgrammer.writeCode();
         System.out.println(myProgrammer.getAge());
 
-        Laptop lt = context.getBean("laptop", Laptop.class);
-
 
         /**The code below use the XML based configuration*/
 //        ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
