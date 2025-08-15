@@ -4,8 +4,8 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="programmer" class="inc.sims.hustles.Programmer">
-        <constructor-arg value="32"/>
-        <constructor-arg ref="mylaptop"/>
+        <constructor-arg name="laptop" ref="mylaptop"/>
+        <constructor-arg name="age" value="32"/>
 <!--        <property name="age" value="32"></property>-->
 <!--        <property name="laptop" ref="mylaptop"></property>-->
     </bean>

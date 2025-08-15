@@ -1,5 +1,7 @@
 package inc.sims.hustles;
 
+import java.beans.ConstructorProperties;
+
 public class Programmer {
 
     private int age;
@@ -9,6 +11,7 @@ public class Programmer {
         System.out.println("Programmer object created");
     }
 
+    @ConstructorProperties({"age", "laptop"})
     public Programmer(int age, Laptop laptop){
         this.age = age;
         this.laptop = laptop;
