@@ -8,7 +8,7 @@ public class App
     public static void main( String[] args )
     {
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-        Programmer programmer = (Programmer) context.getBean("programmer");
+        Programmer programmer = context.getBean(Programmer.class);
         programmer.writeCode();
         System.out.println(programmer.getAge());
         programmer.getComputer().compileCode();

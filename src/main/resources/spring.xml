@@ -3,7 +3,7 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="programmer" class="inc.sims.hustles.Programmer" autowire="byType">
+    <bean class="inc.sims.hustles.Programmer" autowire="byType">
                 <property name="age" value="32"></property>
                 <property name="computer" ref="mylaptop"></property>
 <!--        <constructor-arg name="computer" ref="mydesktop"/>-->
