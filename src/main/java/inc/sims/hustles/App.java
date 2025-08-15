@@ -10,7 +10,7 @@ public class App
     public static void main( String[] args )
     {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-        Laptop laptop = context.getBean(Laptop.class);
+        Laptop lt = context.getBean("laptop", Laptop.class);
 
 
 
