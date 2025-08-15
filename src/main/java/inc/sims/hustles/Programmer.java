@@ -9,6 +9,12 @@ public class Programmer {
         System.out.println("Programmer object created");
     }
 
+    public Programmer(int age, Laptop laptop){
+        this.age = age;
+        this.laptop = laptop;
+        System.out.println("Parameterised Programmer object created");
+    }
+
     public int getAge() {
         return age;
     }
