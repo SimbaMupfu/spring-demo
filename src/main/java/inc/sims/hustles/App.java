@@ -12,6 +12,8 @@ public class App
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
         Laptop lt = context.getBean("laptop", Laptop.class);
 
+        Laptop lt2 = context.getBean("laptop", Laptop.class);
+
 
 
         /**The code below use the XML based configuration*/
