@@ -1,16 +1,24 @@
 package inc.sims.hustles;
 
+import inc.sims.hustles.config.AppConfig;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class App
 {
     public static void main( String[] args )
     {
-        ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-        Programmer programmer = context.getBean(Programmer.class);
-        programmer.writeCode();
-        System.out.println(programmer.getAge());
-        programmer.getComputer().compileCode();
+        ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+        Laptop laptop = context.getBean(Laptop.class);
+
+
+
+        /**The code below use the XML based configuration*/
+//        ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
+//        Programmer programmer = context.getBean(Programmer.class);
+//        programmer.writeCode();
+//        System.out.println(programmer.getAge());
+//        programmer.getComputer().compileCode();
     }
 }
