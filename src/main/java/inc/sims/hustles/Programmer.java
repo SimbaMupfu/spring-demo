@@ -1,7 +1,10 @@
 package inc.sims.hustles;
 
+import org.springframework.stereotype.Component;
+
 import java.beans.ConstructorProperties;
 
+@Component
 public class Programmer {
 
     private int age;
