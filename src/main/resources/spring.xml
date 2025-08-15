@@ -5,6 +5,8 @@
 
     <bean id="programmer" class="inc.sims.hustles.Programmer">
         <property name="age" value="32"></property>
+        <property name="laptop" ref="mylaptop"></property>
     </bean>
+    <bean id="mylaptop" class="inc.sims.hustles.Laptop"></bean>
 
 </beans>

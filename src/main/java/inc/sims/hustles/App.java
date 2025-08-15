@@ -11,5 +11,6 @@ public class App
         Programmer programmer = (Programmer) context.getBean("programmer");
         programmer.writeCode();
         System.out.println(programmer.getAge());
+        programmer.getLaptop().compileCode();
     }
 }
