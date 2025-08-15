@@ -5,13 +5,15 @@
 
     <bean class="inc.sims.hustles.Programmer" autowire="byType">
                 <property name="age" value="32"></property>
-                <property name="computer" ref="mylaptop"></property>
+                <property name="computer">
+                    <bean id="mylaptop" class="inc.sims.hustles.Laptop" primary="true"></bean>
+                </property>
 <!--        <constructor-arg name="computer" ref="mydesktop"/>-->
 <!--        <constructor-arg name="age" value="32"/>-->
 <!--        <property name="age" value="32"></property>-->
 <!--        <property name="laptop" ref="mylaptop"></property>-->
     </bean>
-    <bean id="mylaptop" class="inc.sims.hustles.Laptop" primary="true"></bean>
+<!--    <bean id="mylaptop" class="inc.sims.hustles.Laptop" primary="true"></bean>-->
     <bean id="mydesktop" class="inc.sims.hustles.Desktop" lazy-init="true"></bean>
 
 </beans>

@@ -11,12 +11,12 @@ public class Programmer {
         System.out.println("Programmer object created");
     }
 
-    @ConstructorProperties({"age", "computer"})
-    public Programmer(int age, Computer computer){
-        this.age = age;
-        this.computer = computer;
-        System.out.println("Parameterised Programmer object created");
-    }
+//    @ConstructorProperties({"age", "computer"})
+//    public Programmer(int age, Computer computer){
+//        this.age = age;
+//        this.computer = computer;
+//        System.out.println("Parameterised Programmer object created");
+//    }
 
     public int getAge() {
         return age;
