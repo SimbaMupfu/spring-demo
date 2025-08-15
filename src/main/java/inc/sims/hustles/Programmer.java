@@ -2,6 +2,7 @@ package inc.sims.hustles;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.beans.ConstructorProperties;
@@ -9,10 +10,9 @@ import java.beans.ConstructorProperties;
 @Component
 public class Programmer {
 
+    @Value("27")
     private int age;
 
-    @Autowired
-    @Qualifier("laptop")
     private Computer computer;
 
     public Programmer(){
@@ -38,6 +38,7 @@ public class Programmer {
         return computer;
     }
 
+    @Autowired
     public void setComputer(Computer computer) {
         this.computer = computer;
     }
